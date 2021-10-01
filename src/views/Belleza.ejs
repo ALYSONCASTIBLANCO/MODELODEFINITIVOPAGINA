@@ -52,14 +52,14 @@
                    <input type="image" src="images/belleza5.jpg" width="150px" height="200px"/>
                    <input type="image" src="images/belleza6.jpg" width="150px" height="200px"/>-->
                      <% for(var i=0;i < tasks.length;i++){ %>
-                    <div class="card">
-                        <div class="container">
+                        <div class="card">
+                            <img src="images/fondo.png" alt="Imagen Producto" style="width:100%">
                             <h1><%=tasks[i].NOMBRE_PRODUCTO%></h1>
                             <h6>IDENTIFICADOR DE PRODUCTO: <%=tasks[i].ID_PRODUCTO%></h6>
                             <h6>UNIDADES: <%=tasks[i].CANTIDAD%></h6>
                             <h6>CATEGORÍA: <%=tasks[i].CATEGORIA%></h6>
+                            <p><button>Añadir al carrito</button></p>
                         </div>
-                    </div>
                 <%}%>
 
                    

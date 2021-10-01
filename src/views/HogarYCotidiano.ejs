@@ -49,16 +49,16 @@
                    <input type="image" src="images/hogar4.jpg" width="150px" height="200px"/>
                    <input type="image" src="images/hogar5.jpg" width="150px" height="200px"/>
                    <input type="image" src="images/hogar6.jpg" width="150px" height="200px"/>-->
-                   <% for(var i=0;i < tasks.length;i++){ %>
+                <% for(var i=0;i < tasks.length;i++){ %>
                     <div class="card">
-                        <div class="container">
-                            <h1><%=tasks[i].NOMBRE_PRODUCTO%></h1>
-                            <h6>IDENTIFICADOR DE PRODUCTO: <%=tasks[i].ID_PRODUCTO%></h6>
-                            <h6>UNIDADES: <%=tasks[i].CANTIDAD%></h6>
-                            <h6>CATEGORÍA: <%=tasks[i].CATEGORIA%></h6>
-                        </div>
-                    </div>
-                <%}%>
+                        <img src="images/fondo.png" alt="Imagen Producto" style="width:100%">
+                        <h1><%=tasks[i].NOMBRE_PRODUCTO%></h1>
+                        <h6>IDENTIFICADOR DE PRODUCTO: <%=tasks[i].ID_PRODUCTO%></h6>
+                        <h6>UNIDADES: <%=tasks[i].CANTIDAD%></h6>
+                        <h6>CATEGORÍA: <%=tasks[i].CATEGORIA%></h6>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>             
+                 <%}%>
           </div>
           
           <div id="foot"> 
