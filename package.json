@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/LEOSM7/MAYOREO/issues"
   },
-  "homepage": "https://github.com/LEOSM7/MAYOREO#readme"
+  "homepage": "https://github.com/LEOSM7/MAYOREO#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13",
+    "path": "^0.12.7"
+  }
 }
