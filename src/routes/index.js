@@ -14,25 +14,25 @@ router.get('/top-ventas',async (req,res)=>{
 });
 
 router.get('/categoria-hogar',async (req,res)=>{
-    const tasks=await Task.find({"CATEGORIA":"Hogar"});
+    const tasks=await Task.find({"category":"Hogar"});
     console.log(tasks);
     res.render('HogarYCotidiano', {tasks});
 });
 
 router.get('/categoria-belleza',async (req,res)=>{
-    const tasks=await Task.find({"CATEGORIA":"Belleza"});
+    const tasks=await Task.find({"category":"Belleza"});
     console.log(tasks);
     res.render('Belleza', {tasks});
 });
 
 router.get('/categoria-audio',async (req,res)=>{
-    const tasks=await Task.find({"CATEGORIA":"Audio"});
+    const tasks=await Task.find({"category":"Audio"});
     console.log(tasks);
     res.render('AudioYVideo', {tasks});
 });
 
 router.get('/categoria-luces',async (req,res)=>{
-    const tasks=await Task.find({"CATEGORIA":"Luces"});
+    const tasks=await Task.find({"category":"Luces"});
     console.log(tasks);
     res.render('Linternasyluces', {tasks});
 });

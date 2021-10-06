@@ -1,9 +1,12 @@
 const mongoose=require('mongoose');
 const esquemaproducto=mongoose.Schema({
-    ID_PRODUCTO:Number,
-    NOMBRE_PRODUCTO: String,
-    CANTIDAD:Number,
-    CATEGORIA:String
+    my_id:String,
+    amount:Number,
+    category:String,
+    desactualizar:String,
+    lastModified:Date,
+    name:String,
+    photo_id:String
 })
 const modeloproducto=mongoose.model('stock',esquemaproducto,'stock');
 module.exports=modeloproducto;
